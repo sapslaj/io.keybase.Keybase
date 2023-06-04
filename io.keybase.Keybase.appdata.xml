@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <id type="desktop">io.keybase.Keybase.desktop</id>
+  <name>Keybase</name>
+  <developer_name>Keybase</developer_name>
+  <summary>Keybase client</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>BSD-3-Clause</project_license>
+  <url type="homepage">https://keybase.io/</url>
+  <icon type="remote" height="48" width="48">https://keybase.io/images/icons/icon-keybase-logo-48.png</icon>
+  <description>
+    <p>
+      Keybase.io client
+    </p>
+  </description>
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>Notifications</kudo>
+  </kudos>
+  <categories>
+    <category>InstantMessaging</category>
+    <category>Network</category>
+  </categories>
+</application>

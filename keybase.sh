@@ -1,5 +1,7 @@
 #!/bin/bash
 
+FLATPAK_ID=${FLATPAK_ID:-"io.keybase.Keybase"}
+
 # Keybase always downloads to "~/Downloads"; make that a symlink to the XDG dir.
 KEYBASE_DOWNLOADS=~/Downloads
 if ! test -d "$KEYBASE_DOWNLOADS"; then

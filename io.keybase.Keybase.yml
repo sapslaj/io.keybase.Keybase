@@ -47,6 +47,9 @@ modules:
           install -Dm0644 "usr/share/icons/hicolor/${size}x${size}/apps/keybase.png" "${FLATPAK_DEST}/share/icons/hicolor/${size}x${size}/apps/keybase.png"
         done
       - desktop-file-edit --set-key=Icon --set-value="keybase" "${FLATPAK_DEST}/share/applications/keybase.desktop"
+      - desktop-file-edit --set-key=StartupWMClass --set-value=keybase "${FLATPAK_DEST}/share/applications/keybase.desktop"
+      - install -Dm0644 io.keybase.Keybase.appdata.xml /app/share/appdata/io.keybase.Keybase.appdata.xml
+      - install -Dm0644 io.keybase.Keybase.appdata.xml /app/share/metainfo/io.keybase.Keybase.appdata.xml
     sources:
       - type: file
         dest-filename: keybase.deb
@@ -54,3 +57,5 @@ modules:
         sha256: 14c85b312b891eae5de44d1d4d5024d36cbce545e686d299624e2a71b9e14712
       - type: file
         path: keybase.sh
+      - type: file
+        path: io.keybase.Keybase.appdata.xml
